@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Super Helper 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- LINK CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 class="title">AI Super Helper 2026 🚀</h1>
+
+<!-- HOME -->
+<div id="home" class="screen active">
+  <div class="card" onclick="openScreen('chat')">🤖 AI Chat</div>
+  <div class="card" onclick="openScreen('resume')">📄 Resume Builder</div>
+  <div class="card" onclick="openScreen('caption')">📸 Caption Generator</div>
+  <div class="card" onclick="openScreen('homework')">📚 Homework Helper</div>
+  <div class="card" onclick="openScreen('business')">💼 Business Name</div>
+  <div class="card" onclick="openScreen('farming')">🌾 Farming Tips</div>
+</div>
+
+<!-- CHAT -->
+<div id="chat" class="screen">
+  <button onclick="goHome()">⬅ Back</button>
+  <div id="chatBox"></div>
+  <input id="chatInput" placeholder="Type message...">
+  <button onclick="sendMessage()">Send</button>
+</div>
+
+<!-- RESUME -->
+<div id="resume" class="screen">
+  <button onclick="goHome()">⬅ Back</button>
+  <input id="name" placeholder="Name">
+  <input id="skills" placeholder="Skills">
+  <input id="edu" placeholder="Education">
+  <button onclick="generateResume()">Generate</button>
+  <p id="resumeOutput"></p>
+</div>
+
+<!-- CAPTION -->
+<div id="caption" class="screen">
+  <button onclick="goHome()">⬅ Back</button>
+  <input id="captionInput" placeholder="Topic">
+  <button onclick="generateCaption()">Generate</button>
+  <p id="captionOutput"></p>
+</div>
+
+<!-- HOMEWORK -->
+<div id="homework" class="screen">
+  <button onclick="goHome()">⬅ Back</button>
+  <input id="hwInput" placeholder="Enter question">
+  <button onclick="solveHW()">Solve</button>
+  <p id="hwOutput"></p>
+</div>
+
+<!-- BUSINESS -->
+<div id="business" class="screen">
+  <button onclick="goHome()">⬅ Back</button>
+  <input id="bizInput" placeholder="Business type">
+  <button onclick="generateBiz()">Generate</button>
+  <p id="bizOutput"></p>
+</div>
+
+<!-- FARMING -->
+<div id="farming" class="screen">
+  <button onclick="goHome()">⬅ Back</button>
+  <input id="cropInput" placeholder="Crop name">
+  <button onclick="generateTips()">Get Tips</button>
+  <p id="farmOutput"></p>
+</div>
+
+<!-- Ad Banner -->
+<div class="ad">Ad Space</div>
+
+<!-- LINK JS -->
+<script src="script.js"></script>
+
+</body>
+  </html>
