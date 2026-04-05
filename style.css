@@ -1,0 +1,45 @@
+body {
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+.title {
+  padding: 10px;
+}
+
+.card {
+  background: linear-gradient(45deg, #4f46e5, #9333ea);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.screen {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  width: 80%;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+}
+
+.ad {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: black;
+  padding: 10px;
+}
